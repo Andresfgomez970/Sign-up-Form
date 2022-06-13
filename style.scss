@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'drexs';
+    src: url('/fonts/Norse-Bold.otf') format('otf'),
+         url('/fonts/Drexs.ttf') format('ttf'),
+         url('/fonts/Drexs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sidebar {
+    position: relative;
+    background-image: url("images/fractal.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 40%;
+}
+
+.side-logo {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    background-color: #0000005d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.side-logo img {
+    border-radius: 60px;
+    width: clamp(40px, 16%, 16%);
+}
+
+.side-logo p {
+    width: 25%;
+    font-size: clamp(1rem, 2vw, 3vw);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .side-logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .side-logo p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.logo-message {
+    font-family: 'drexs', sans-serif;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: #f7f8fa;
+    padding-left: clamp(20px, 4%, 40px);
+    padding-right: clamp(30px, 20%, 200px);
+    row-gap: 40px;
+}
+
+.form-container p{
+    font-family: sans-serif;
+    color: #000000b3;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: clamp(20px, 4%, 30px);
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.two-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-group {
+    width: 300px;
+}

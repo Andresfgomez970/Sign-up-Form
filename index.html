@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="side-logo">
+                <img src="images/golden-logo.png">
+                <p class="logo-message"> <span>The</span>  <br> <span>Golden</span> <br> <span>Ticket</span> </p>
+            </div>
+        </div>
 
+        <div class="form-container">
+            <p class="fill-in-message">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p class="fill-in-encourage">You <em>know</em> you want to.</p>
+            
+        
+            <form method="post">
+                <fieldset>
+                    <h2>Sign-up Form</h2>
+                    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                    
+                    <div class="two-inputs">
+                        <div class="input-group">
+                            <label for="firstname">First name</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="lastname">Last name</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="number">Phone number</label>
+                            <input type="tel" name="number" id="number" required>
+                        </div>
+                    </div>
+
+                    <did class="two-inputs">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        
+                        <div class="input-group" id="password-confirm-group">
+                            <label for="password-confirm">Confirm password</label>
+                            <input type="password" name="password-confirm" id="password-confirm" required>
+                        </div>
+                    </did>
+                </fieldset>
+                <button type="submit" class="create-account">Create Account</button>        
+            </form>
+
+
+
+            <p id="account">Already have an account? <a href="#" class="login">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
